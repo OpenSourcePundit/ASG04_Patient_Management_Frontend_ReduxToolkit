@@ -1,0 +1,12 @@
+table {
+    border: 2px solid black;
+  }
+  
+  thead tr td {
+    border: 2px solid #2dc2d6;
+  }
+  
+  tbody tr td {
+    font-family: poppins;
+  }
+  
