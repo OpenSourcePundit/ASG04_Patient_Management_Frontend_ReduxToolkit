@@ -13,10 +13,14 @@ const WardTable = ({ data }) => {
       </thead>
       <tbody>
         {data?.map(({ _id, wardNumber, capacity, specialization }) => (
-          <tr key={_id}>
-            <td onClick={() => navigate(`/ward/${_id}`)}>{wardNumber}</td>
-            <td onClick={() => navigate(`/ward/${_id}`)}>{capacity}</td>
-            <td onClick={() => navigate(`/ward/${_id}`)}>{specialization}</td>
+          <tr
+            style={{ cursor: "pointer" }}
+            key={_id}
+            onClick={() => navigate(`/ward/${_id}`)}
+          >
+            <td>{wardNumber}</td>
+            <td>{capacity}</td>
+            <td>{specialization}</td>
           </tr>
         ))}
       </tbody>

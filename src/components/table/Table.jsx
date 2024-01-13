@@ -15,7 +15,11 @@ const Table = ({ patients }) => {
       </thead>
       <tbody>
         {patients?.map(({ _id, name, age, gender, assignedWard }, index) => (
-          <tr key={index} onClick={() => navigate(`/patient/${_id}`)}>
+          <tr
+            style={{ cursor: "pointer" }}
+            key={index}
+            onClick={() => navigate(`/patient/${_id}`)}
+          >
             <td>{name}</td>
             <td>{age}</td>
             <td>{gender}</td>

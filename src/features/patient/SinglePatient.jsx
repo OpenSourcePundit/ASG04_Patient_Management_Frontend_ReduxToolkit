@@ -54,6 +54,9 @@ const SinglePatient = () => {
           <button className="edit-btn">Edit Details</button>
         </NavLink>
         <button onClick={handleDelete}>Delete</button>
+        <NavLink to={`/`}>
+          <button className="edit-btn">Back</button>
+        </NavLink>
       </div>
     </div>
   );

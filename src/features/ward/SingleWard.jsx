@@ -40,6 +40,9 @@ const SingleWard = () => {
           <button className="edit-btn">Edit</button>
         </NavLink>
         <button onClick={handleDelete}>Delete</button>
+        <NavLink to={`/ward`}>
+          <button className="edit-btn">Back</button>
+        </NavLink>
       </div>
     </div>
   );
