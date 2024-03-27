@@ -6,16 +6,16 @@
       "command": "yarn install"
     },
     {
-      "command": "npm i react-dom react-scripts axios --force",
-      "name": "npm i react-dom react-scripts axios --force"
+      "name": "npm i react-dom react-scripts axios --force",
+      "command": "npm i react-dom react-scripts axios --force"
     },
     {
-      "command": "npm i react-redux react-router react-router-dom  --force",
-      "name": "npm i react-redux react-router react-router-dom  --force"
+      "name": "npm i react-redux react-router react-router-dom  --force",
+      "command": "npm i react-redux react-router react-router-dom  --force"
     },
     {
-      "command": "npm i @reduxjs/toolkit",
-      "name": "npm i @reduxjs/toolkit"
+      "name": "npm i @reduxjs/toolkit",
+      "command": "npm i @reduxjs/toolkit"
     }
   ],
 
@@ -24,7 +24,10 @@
     "start": {
       "name": "start",
       "command": "yarn start",
-      "runAtStart": true
+      "runAtStart": true,
+      "preview": {
+        "port": 3000
+      }
     },
     "build": {
       "name": "build",
